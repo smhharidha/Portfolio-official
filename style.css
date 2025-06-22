@@ -1,0 +1,214 @@
+/* styles.css */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom right, #0d0d0d 70%, #330066 100%);
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  overflow-x: hidden;
+  position: relative;
+  transition: all 0.4s ease-in-out;
+}
+
+#bg-animation {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: radial-gradient(circle at 20% 20%, #1e005f 0%, transparent 30%),
+              radial-gradient(circle at 80% 80%, #330066 0%, transparent 30%);
+  animation: pulseBackground 10s infinite alternate;
+}
+
+@keyframes pulseBackground {
+  0% { filter: blur(30px); }
+  100% { filter: blur(50px); }
+}
+
+img.profile-pic {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #a259ff;
+  margin-bottom: 20px;
+  box-shadow: 0 0 15px #a259ff;
+  transition: transform 0.3s ease;
+}
+
+img.profile-pic:hover {
+  transform: scale(1.05);
+}
+
+h1, h2 {
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+h1:hover, h2:hover {
+  color: #ffb3ff;
+  transform: scale(1.03);
+}
+
+p.description {
+  font-size: 1rem;
+  max-width: 600px;
+  margin: 40px auto;
+  color: #ccc;
+  animation: fadeInUp 2s ease;
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.projects-section {
+  text-align: left;
+  margin: 60px auto;
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 0 40px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  align-items: start;
+  margin-left: 20px;
+}
+
+.section-title-left {
+  grid-row: span 2; /* Let the title span both rows */
+  font-size: 2rem;
+  color: #a259ff;
+  margin: 0;
+  padding-top: 100px;
+}
+
+
+.project-box {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  width: 100%;
+  text-align: left;
+  transition: background 0.3s ease, transform 0.3s ease, opacity 0.5s ease;
+  background-color: transparent;
+  border-radius: 12px;
+  border: none;
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+.project-box.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.project-box:hover {
+  background-color: rgba(162, 89, 255, 0.2);
+  border: 1px solid #a259ff;
+  transform: translateY(-5px);
+  box-shadow: 0 0 10px #a259ff;
+}
+
+.project-box a {
+  text-decoration: none;
+  color: #a259ff;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.project-box a:hover {
+  color: #ff66ff;
+}
+
+.project-img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid #a259ff;
+  transition: transform 0.3s ease;
+}
+
+.project-img:hover {
+  transform: scale(1.1);
+}
+
+.resume-button {
+  display: inline-block;
+  margin-top: 40px;
+  padding: 12px 30px;
+  font-size: 1rem;
+  color: white;
+  background-image: linear-gradient(to right, #8424ff, #a259ff);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  box-shadow: 0 0 10px #a259ff;
+  position: relative;
+  overflow: hidden;
+}
+
+.resume-button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255,255,255,0.2);
+  transition: left 0.5s;
+  z-index: 0;
+}
+
+.resume-button:hover::after {
+  left: 100%;
+}
+
+.resume-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px #a259ff;
+}
+
+.contact-section {
+  margin-top: 60px;
+  animation: fadeIn 2s ease-in;
+  color: #ddd;
+}
+
+.contact-section a {
+  color: #a259ff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.social-icons {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+  padding: 0;
+}
+
+.social-icons li img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease;
+}
+
+.social-icons li img:hover {
+  transform: scale(1.3);
+  filter: brightness(1.2) drop-shadow(0 0 5px #a259ff);
+}
+
+

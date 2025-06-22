@@ -1,0 +1,138 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Front End Projects</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom right, #0d0d0d 70%, #330066 100%);
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .projects-section {
+      text-align: left;
+      margin: 60px auto;
+      max-width: 1000px;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      padding: 0 40px;
+    }
+
+    h3.section-title-left {
+      font-size: 2rem;
+      color: #a259ff;
+      margin-top: 20px;
+      text-align: left;
+      margin-left: 20px;
+    }
+
+    .project-box {
+      display: flex;
+      gap: 30px;
+      align-items: flex-start;
+      padding: 20px;
+      background-color: transparent;
+      border-radius: 12px;
+      border: none;
+      opacity: 0;
+      transform: translateY(50px);
+      transition: background 0.3s ease, transform 0.3s ease, opacity 0.5s ease;
+    }
+
+    .project-box.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .project-box:hover {
+      background-color: rgba(162, 89, 255, 0.2);
+      border: 1px solid #a259ff;
+      transform: translateY(-5px);
+      box-shadow: 0 0 10px #a259ff;
+    }
+
+    .project-box a {
+      text-decoration: none;
+      color: #a259ff;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    .project-box a:hover {
+      color: #ff66ff;
+    }
+
+    .project-img {
+      width: 150px;
+      height: auto;
+      object-fit: cover;
+      border-radius: 10px;
+      border: 2px solid #a259ff;
+      transition: transform 0.3s ease;
+    }
+
+    .project-img:hover {
+      transform: scale(1.1);
+    }
+
+    .project-box div {
+      max-width: 700px;
+    }
+    @media (max-width: 768px) {
+  .projects-section {
+    padding: 0 20px;
+  }
+
+  .project-box {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .project-img {
+    width: 100px;
+    margin-bottom: 15px;
+  }
+
+  .project-box div {
+    max-width: 100%;
+  }
+
+  h3.section-title-left {
+    text-align: center;
+    margin-left: 0;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <div class="projects-section">
+    <h3 class="section-title-left">Front End Projects</h3>
+
+    <div class="project-box visible">
+      <img class="project-img" src="images/youtubeclone.png">
+      <div>
+        <strong>Youtube Clone</strong><br>
+        <p>The YouTube Clone project is a front-end development work created using HTML and CSS, aimed at replicating the layout and design of YouTube’s homepage. This project demonstrates the application of core web technologies like CSS Grid, flexbox, image positioning, and responsive layout techniques. It features structured video thumbnails, navigation elements, sidebar menus, and interactive link styling to reflect the familiar YouTube user interface. Through this project, I gained hands-on experience in designing responsive web pages and learned how to organize content and components effectively laying a solid foundation for building real-world websites.</p>
+        <a href="https://smhharidha.github.io/Youtube-Clone/">View Project</a>
+      </div>
+    </div>
+
+    <div class="project-box visible">
+      <img class="project-img" src="images/space.png">
+      <div>
+        <strong>Multiple landing pages</strong><br>
+        <p>The Space Articles project is a fully responsive, multi-page website built using HTML, CSS, and JavaScript, showcasing daily updates and informative content about space technologies. Designed with a clean and structured layout, the project includes multiple landing pages for smooth navigation between articles, offering a seamless user experience across all devices. By incorporating Bootstrap, the project efficiently utilizes pre-defined styles and components to enhance visual appeal and functionality. This project not only demonstrates front-end development skills but also emphasizes adaptive design, user engagement, and effective content presentation.</p>
+        <a href="https://smhharidha.github.io/FSD-Deploy/">View Project</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

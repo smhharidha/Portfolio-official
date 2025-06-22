@@ -1,0 +1,118 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Java Projects</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom right, #0d0d0d 70%, #330066 100%);
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .projects-section {
+      text-align: left;
+      margin: 60px auto;
+      max-width: 1000px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      padding: 0 40px;
+    }
+
+    h3.section-title-left {
+      font-size: 2rem;
+      color: #a259ff;
+      margin-top: 20px;
+      text-align: left;
+      width: 100%;
+    }
+
+    .project-box {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 20px;
+      width: 100%;
+      padding: 20px;
+      background-color: transparent;
+      border-radius: 12px;
+      border: none;
+      opacity: 0;
+      transform: translateY(50px);
+      transition: background 0.3s ease, transform 0.3s ease, opacity 0.5s ease;
+    }
+
+    .project-box.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .project-box:hover {
+      background-color: rgba(162, 89, 255, 0.2);
+      border: 1px solid #a259ff;
+      transform: translateY(-5px);
+      box-shadow: 0 0 10px #a259ff;
+    }
+
+    .project-box a {
+      text-decoration: none;
+      color: #a259ff;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    .project-box a:hover {
+      color: #ff66ff;
+    }
+
+    .project-img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 10px;
+      border: 2px solid #a259ff;
+      transition: transform 0.3s ease;
+    }
+
+    .project-img:hover {
+      transform: scale(1.1);
+    }
+
+    @media (max-width: 768px) {
+      .project-box {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="projects-section">
+    <h3 class="section-title-left">Java Projects</h3>
+
+    <div class="project-box visible">
+      <img class="project-img" src="images/java image.jpg">
+      <div>
+        <strong>Employee Info Management System</strong><br>
+        <p>The Employment Information System is a simple Java-based console application designed to manage employee records using object-oriented programming. It allows users to add new employees by entering their ID, name, position, and salary, view all stored employee details, and search for a specific employee by ID. The program uses an ArrayList to store employee objects and a menu-driven interface to interact with users. It’s a beginner-friendly project that demonstrates core Java concepts like classes, objects, lists, loops, and user input handling through the Scanner class.</p>
+        <a href="https://github.com/smhharidha/Employee-info-Management">View Project</a>
+      </div>
+    </div>
+
+    <div class="project-box visible">
+      <img class="project-img" src="images/java image.jpg">
+      <div>
+        <strong>Hospital Management System</strong><br>
+        <p>The Pharmacy Management System is a Java-based console application that helps manage medicine inventory and sales in a pharmacy. It allows users to add new medicines with details like name, category, stock, and price, update or remove existing medicines, view all available medicines, and record sales by deducting quantities from stock. The system keeps a history of all sales made, enabling users to review past transactions. It uses classes like Medicine to represent individual items and PharmacyManagementSystem to handle operations using data structures such as HashMap for inventory and ArrayList for sales. This project effectively demonstrates object-oriented principles, user input handling, and real-world inventory logic in a beginner-friendly way.</p>
+        <a href="https://github.com/smhharidha/Hospital-Management-System">View Project</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
