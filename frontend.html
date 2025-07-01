@@ -62,6 +62,7 @@
       color: #a259ff;
       font-weight: bold;
       transition: color 0.3s ease;
+      cursor: pointer;
     }
 
     .project-box a:hover {
@@ -84,32 +85,54 @@
     .project-box div {
       max-width: 700px;
     }
+
+    .project-box strong {
+      font-size: 1.25rem;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .project-box ul {
+      font-size: 0.87rem;
+      padding-left: 40px;
+      margin: 0 10px 10px;
+    }
+
     @media (max-width: 768px) {
-  .projects-section {
-    padding: 0 20px;
-  }
+      .projects-section {
+        padding: 0 20px;
+      }
 
-  .project-box {
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-  }
+      .project-box {
+        flex-direction: column;
+        text-align: left;
+        align-items: stretch;
+        padding: 10px 15px;
+      }
 
-  .project-img {
-    width: 100px;
-    margin-bottom: 15px;
-  }
+      .project-img {
+        width: 100px;
+        margin-bottom: 15px;
+      }
 
-  .project-box div {
-    max-width: 100%;
-  }
+      .project-box div {
+        max-width: 100%;
+      }
 
-  h3.section-title-left {
-    text-align: center;
-    margin-left: 0;
-  }
-}
+      h3.section-title-left {
+        text-align: center;
+        margin-left: 0;
+        font-size: 1.3rem;
+      }
 
+      .project-box strong {
+        font-size: 1.1rem;
+      }
+
+      .project-box ul {
+        font-size: 0.8rem;
+      }
+    }
   </style>
 </head>
 <body>
@@ -119,8 +142,13 @@
     <div class="project-box visible">
       <img class="project-img" src="images/youtubeclone.png">
       <div>
-        <strong>Youtube Clone</strong><br>
-        <p>The YouTube Clone project is a front-end development work created using HTML and CSS, aimed at replicating the layout and design of YouTube’s homepage. This project demonstrates the application of core web technologies like CSS Grid, flexbox, image positioning, and responsive layout techniques. It features structured video thumbnails, navigation elements, sidebar menus, and interactive link styling to reflect the familiar YouTube user interface. Through this project, I gained hands-on experience in designing responsive web pages and learned how to organize content and components effectively laying a solid foundation for building real-world websites.</p>
+        <strong>Youtube Clone</strong>
+        <ul>
+          <li>The YouTube Clone project is a front-end development work created using HTML and CSS, aimed at replicating the layout and design of YouTube’s homepage.</li>
+          <li>This project demonstrates the application of core web technologies like CSS Grid, flexbox, image positioning, and responsive layout techniques.</li>
+          <li>It features structured video thumbnails, navigation elements, sidebar menus, and interactive link styling to reflect the familiar YouTube user interface.</li>
+          <li>Through this project, I gained hands-on experience in designing responsive web pages and learned how to organize content and components effectively laying a solid foundation for building real-world websites.</li>
+        </ul>
         <a href="https://smhharidha.github.io/Youtube-Clone/">View Project</a>
       </div>
     </div>
@@ -128,8 +156,13 @@
     <div class="project-box visible">
       <img class="project-img" src="images/space.png">
       <div>
-        <strong>Multiple landing pages</strong><br>
-        <p>The Space Articles project is a fully responsive, multi-page website built using HTML, CSS, and JavaScript, showcasing daily updates and informative content about space technologies. Designed with a clean and structured layout, the project includes multiple landing pages for smooth navigation between articles, offering a seamless user experience across all devices. By incorporating Bootstrap, the project efficiently utilizes pre-defined styles and components to enhance visual appeal and functionality. This project not only demonstrates front-end development skills but also emphasizes adaptive design, user engagement, and effective content presentation.</p>
+        <strong>Multiple Landing Pages</strong>
+        <ul>
+          <li>The Space Articles project is a fully responsive, multi-page website built using HTML, CSS, and JavaScript, showcasing daily updates and informative content about space technologies.</li>
+          <li>Designed with a clean and structured layout, the project includes multiple landing pages for smooth navigation between articles, offering a seamless user experience across all devices.</li>
+          <li>By incorporating Bootstrap, the project efficiently utilizes pre-defined styles and components to enhance visual appeal and functionality.</li>
+          <li>This project not only demonstrates front-end development skills but also emphasizes adaptive design, user engagement, and effective content presentation.</li>
+        </ul>
         <a href="https://smhharidha.github.io/FSD-Deploy/">View Project</a>
       </div>
     </div>
