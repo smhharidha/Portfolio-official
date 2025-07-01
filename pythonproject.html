@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HTML Projects</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom right, #0d0d0d 70%, #330066 100%);
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .projects-section {
+      text-align: left;
+      margin: 60px auto;
+      max-width: 1000px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      padding: 0 40px;
+    }
+
+    h3.section-title-left {
+      font-size: 1.75rem;
+      color: #a259ff;
+      margin-top: 20px;
+      text-align: left;
+      width: 100%;
+    }
+
+    .project-box {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 20px;
+      width: 100%;
+      padding: 20px;
+      background-color: transparent;
+      border-radius: 12px;
+      border: none;
+      opacity: 0;
+      transform: translateY(50px);
+      transition: background 0.3s ease, transform 0.3s ease, opacity 0.5s ease;
+    }
+
+    .project-box.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .project-box:hover {
+      background-color: rgba(162, 89, 255, 0.2);
+      border: 1px solid #a259ff;
+      transform: translateY(-5px);
+      box-shadow: 0 0 10px #a259ff;
+    }
+
+    .project-box a {
+      text-decoration: none;
+      color: #a259ff;
+      font-weight: bold;
+      transition: color 0.3s ease;
+      font-size: 1rem;
+    }
+
+    .project-box a:hover {
+      color: #ff66ff;
+    }
+
+    .project-img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 10px;
+      border: 2px solid #a259ff;
+      transition: transform 0.3s ease;
+    }
+
+    .project-img:hover {
+      transform: scale(1.1);
+    }
+
+    .project-box div {
+      font-size: 0.87rem;
+    }
+
+    .project-box strong {
+      font-size: 1.25rem;
+    }
+
+    ul.project-points {
+      padding-left: 3rem;
+      margin: 0.5rem 0;
+    }
+
+    @media (max-width: 768px) {
+      .project-box {
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+        padding: 20px 10px;
+      }
+
+      .project-box div {
+        width: 100%;
+      }
+
+      .project-img {
+        width: 100px;
+        margin-bottom: 1px;
+      }
+
+      h3.section-title-left {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="projects-section">
+    <h3 class="section-title-left">Python Project</h3>
+
+    <div class="project-box visible">
+      <img class="project-img" src="images/python image.png">
+      <div>
+        <strong>Medium article reader</strong>
+        <ul class="project-points">
+          <li>This Python script takes a URL as input, fetches the article content from the webpage using requests and BeautifulSoup, extracts all paragraph text, and then reads it aloud using the pyttsx3 text-to-speech engine.</li>
+          <li> It also saves the spoken content as an audio file (output.wav) on the user's desktop.</li>
+          <li>This tool combines web scraping with voice output, making it super helpful for auditory learners, accessibility tools, or even hands-free reading experiences.</li>
+        </ul>
+        <a href="https://github.com/smhharidha/Medium-article-reader">View Project</a>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
