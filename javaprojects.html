@@ -64,6 +64,7 @@
       color: #a259ff;
       font-weight: bold;
       transition: color 0.3s ease;
+      font-size: 1rem;
     }
 
     .project-box a:hover {
@@ -83,10 +84,37 @@
       transform: scale(1.1);
     }
 
+    .project-box div {
+      font-size: 0.87rem;
+    }
+
+    .project-box strong {
+      font-size: 1.25rem;
+    }
+
+    ul.project-points {
+      padding-left: 3rem;
+      margin: 0.5rem 0;
+    }
+
     @media (max-width: 768px) {
       .project-box {
         flex-direction: column;
         align-items: center;
+        text-align: left;
+        padding: 20px 10px;
+      }
+
+      .project-box div {
+        width: 100%;
+      }
+
+      .project-img {
+        width: 100px;
+        margin-bottom: 10px;
+      }
+
+      h3.section-title-left {
         text-align: center;
       }
     }
@@ -99,8 +127,13 @@
     <div class="project-box visible">
       <img class="project-img" src="images/java image.jpg">
       <div>
-        <strong>Employee Info Management System</strong><br>
-        <p>The Employment Information System is a simple Java-based console application designed to manage employee records using object-oriented programming. It allows users to add new employees by entering their ID, name, position, and salary, view all stored employee details, and search for a specific employee by ID. The program uses an ArrayList to store employee objects and a menu-driven interface to interact with users. It’s a beginner-friendly project that demonstrates core Java concepts like classes, objects, lists, loops, and user input handling through the Scanner class.</p>
+        <strong>Employee Info Management System</strong>
+        <ul class="project-points">
+          <li>The Employment Information System is a simple Java-based console application designed to manage employee records using object-oriented programming.</li>
+          <li>It allows users to add new employees by entering their ID, name, position, and salary, view all stored employee details, and search for a specific employee by ID.</li>
+          <li>The program uses an ArrayList to store employee objects and a menu-driven interface to interact with users.</li>
+          <li>It’s a beginner-friendly project that demonstrates core Java concepts like classes, objects, lists, loops, and user input handling through the Scanner class.</li>
+        </ul>
         <a href="https://github.com/smhharidha/Employee-info-Management">View Project</a>
       </div>
     </div>
@@ -108,8 +141,13 @@
     <div class="project-box visible">
       <img class="project-img" src="images/java image.jpg">
       <div>
-        <strong>Hospital Management System</strong><br>
-        <p>The Pharmacy Management System is a Java-based console application that helps manage medicine inventory and sales in a pharmacy. It allows users to add new medicines with details like name, category, stock, and price, update or remove existing medicines, view all available medicines, and record sales by deducting quantities from stock. The system keeps a history of all sales made, enabling users to review past transactions. It uses classes like Medicine to represent individual items and PharmacyManagementSystem to handle operations using data structures such as HashMap for inventory and ArrayList for sales. This project effectively demonstrates object-oriented principles, user input handling, and real-world inventory logic in a beginner-friendly way.</p>
+        <strong>Pharmacy Management System</strong>
+        <ul class="project-points">
+          <li>The Pharmacy Management System is a Java-based console application that helps manage medicine inventory and sales in a pharmacy.</li>
+          <li>It allows users to add new medicines with details like name, category, stock, and price, update or remove existing medicines, view all available medicines, and record sales by deducting quantities from stock.</li>
+          <li>The system keeps a history of all sales made, enabling users to review past transactions.</li>
+          <li>It uses classes like Medicine to represent individual items and PharmacyManagementSystem to handle operations using data structures such as HashMap for inventory and ArrayList for sales.</li>
+        </ul>
         <a href="https://github.com/smhharidha/Hospital-Management-System">View Project</a>
       </div>
     </div>
